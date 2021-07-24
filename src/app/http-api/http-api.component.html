@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-10">
         <table class="table table-bordered table-hover">
             <thead class="thead-dark">
                 <th>ID</th>
@@ -17,23 +17,7 @@
         </table><br>
 
     </div>
-    <div class="col-6">
-        <table class="table table-bordered table-hover">
-            <thead class="thead-dark">
-                <th>Id</th>
-                <th>title</th>
-               
-                <th>status</th>
-            </thead>
-            <tbody class="table-info" *ngFor = "let OMDB of omdb">
-               <tr *ngIf = "OMDB.completed == false">
-                <td>{{OMDB.id}}</td>
-                <td>{{OMDB.title}}</td>
-                <td>{{OMDB.completed}}</td>
-               </tr>
-            </tbody>
-        </table>
-    </div>
+  
     </div>
     
 </div>

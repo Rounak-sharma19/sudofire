@@ -11,7 +11,7 @@ export class HttpApiComponent implements OnInit {
   constructor(private http:HttpClient) { }
   
   git:any = [];
-  omdb : any = [];
+
 
   
 
@@ -26,13 +26,6 @@ export class HttpApiComponent implements OnInit {
     () => {console.log("data is fetched succesfully");} 
 
     )
-
-    this.http.get<any>("http://jsonplaceholder.typicode.com/todos/").subscribe(movie =>
-    {
-      this.omdb = movie;
-    })
-
-    
     
   }
 
